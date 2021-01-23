@@ -168,7 +168,7 @@ def improve_circuit(circuit, subcircuit_size=5, connected=True):
                 print('\nCircuit Improved!\n', end='', flush=True)
                 end2 = timer()
                 print('Time (sec):', end2 - start2)
-                print(improved_circuit)
+                
                 improved_full_circuit = Circuit.make_circuit(circuit_graph_copy, circuit.input_labels,
                                                              make_improved_circuit_outputs(circuit.outputs,
                                                                                            subcircuit_outputs,
